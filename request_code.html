@@ -1,0 +1,38 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="asset/css/styles.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card">
+      <header class="login-header">
+        <div class="brand-badge" aria-hidden="true">🔑</div>
+        <h1>Recuperar Contraseña</h1>
+        <p class="subtitle">Ingresa tu correo para recibir un código</p>
+      </header>
+
+      <form id="requestCodeForm" class="login-form">
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" />
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <span class="btn-text">Enviar Código</span>
+        </button>
+
+        <p id="formMessage" class="form-message"></p>
+      </form>
+
+      <footer class="login-footer">
+        <p><a href="index.html" class="link">Volver al inicio de sesión</a></p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="asset/js/request_code.js"></script>
+</body>
+</html>
